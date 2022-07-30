@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebDbG2.Areas.Identity;
 
-namespace WebDbG2.Data
+namespace EjemploDb.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -10,12 +9,5 @@ namespace WebDbG2.Data
             : base(options)
         {
         }
-
-        public DbSet<Dpto>? Dptos{ get; set; }
-
-        public DbSet<Ciudad>? Ciudades { get; set; }
-
-        public DbSet<Persona>? Personas { get; set; }
-
     }
 }
